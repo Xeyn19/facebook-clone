@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:rgb(233, 235, 238);
+}
+.leftside-ctn{
+    margin: 80px 241px;
+
+}
+
+.fb{
+    margin-left: -20px;
+    margin-bottom: -35px;
+}
+.p2{
+    color: rgba(0, 0,0, 0.8);
+    margin-right: 0;
+    font-size: 35px;
+    margin-bottom: -8px;
+}
+.p1{
+    color: rgba(0, 0,0, 0.6);
+    font-size: 15px;
+}
+.p3{
+    position: absolute;
+    top: 440px;
+    left: 300px;
+}
+.p4{
+    position: absolute;
+    top: 440px;
+    left: 510px;
+}
+.img1{
+    margin-right: 13px;
+    border-radius: 13px;
+    
+    transition: 0.2s ease-out;
+}
+.img1:hover{
+    width: 240px;
+    height: 220px;
+
+}
+
+.img2{
+    border-radius: 12px;
+    margin-right: 13px;
+    transition: 0.2s ease-out;
+}
+.img2:hover{
+    width: 250px;
+    height: 220px;
+
+}
+
+.img-ctn {
+    display: flex;
+    flex-flow: wrap row;
+    width: 600px;
+    height: 200px;
+
+    
+ 
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .img-ctn {
+      flex-direction: column;
+    }
+  }
+.login-ctn{
+    background-color:rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    display: flex;
+    border-radius: 8px;
+    flex-flow: wrap column;
+    width: 385px;
+    height: 338px;
+    padding: 5px;
+    margin-left: 830px;
+    margin-top: -380px;
+    border-top-color: rgb(28, 30, 33) ;    
+    border-left-color: rgb(28, 30, 33);
+    border-right-color: rgb(28, 30, 33);
+    border-bottom-color: rgb(28, 30, 33);
+
+}
+input{
+    width: 87%;
+    padding: 13px;
+    
+    margin: 10px;
+    padding-left: 17px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.email{
+    margin-bottom: 2px;
+}
+
+
+.email:focus,.password:focus{
+    border: 1px solid rgb(8, 102, 255);
+    outline: none;
+}
+.password{
+    margin-bottom: 14px;
+}
+.login-btn{
+
+    background-color:rgb(8, 102, 255);
+    border: none;
+    color:rgb(255, 255, 255);
+    margin-left: 10px;
+    width: 95%;
+    height: 47px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+.login-btn:hover{
+    background-color:rgb(42, 121, 247);
+}
+
+.f-pass{
+
+    color: rgb(8, 102, 255);
+    text-align: center;
+    font-size: 14.5px;
+    text-decoration:none;
+    margin-top: 16px;
+}
+.f-pass:hover{
+    text-decoration: underline;
+}
+hr{
+    margin-top: 20px;
+    width: 94%;
+    opacity: 0.3;
+
+
+}
+.cr-acc-ctn{
+    background-color:rgb(66, 183, 42);
+    margin-top: 19px;
+    margin-left: 97px;
+    width: 50%;
+    height: 48px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.cr-acc{
+    position: relative;
+    display: inline-block;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.cr-acc-ctn:hover{
+    background-color:rgb(29, 155, 4);
+}
+.cpage-ctn{
+    margin-top: 15px;
+    margin-left: 875px; 
+    font-size: 14px;
+    
+}
+.cpage{
+    text-decoration: none;
+    color:  rgb(28, 30, 33);
+    font-weight: bold;
+
+}
+.cpage:hover{
+    text-decoration: underline;
+}
+.p5{
+    display: inline-block;
+}

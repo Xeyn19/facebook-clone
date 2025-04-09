@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up for Facebook | Facebook</title>
+
+</head>
+<body>
+    <img src="	https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="" class="fb-logo" width="302px">
+    <form>
+    <div class="sign-up-ctn">
+        <h3 class="cr-acc">Create a new account</h3>
+        <p class="quick">It's quick and easy.</p>
+        <hr class="hr1">
+        <div class="input-ctn">
+        <input type="text" placeholder="First name" class="fname" required>
+        <input type="text" placeholder="Last name" class="lname" required>
+        <input type="email" name="" class="email" placeholder="Mobile number or email" required>
+        <input type="password" name="" class="pass" placeholder="New password" required>
+        </div>
+                <p class="pbday">Birthday</p>
+            <form >
+            
+                <select id="month" name="month" required>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+                </select>
+
+            
+                <select id="day" name="day" required>
+                <!-- Using JavaScript to generate days dynamically based on selected month -->
+                </select>
+
+                
+                <select id="year" name="year" required>
+                <!-- Replace with your preferred range of years -->
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <!-- Add more years as needed -->
+                </select>
+            </form>
+
+            <script>
+                // JavaScript to dynamically populate days based on selected month
+                const monthSelect = document.getElementById('month');
+                const daySelect = document.getElementById('day');
+                const yearSelect = document.getElementById('year');
+
+                function populateDays() {
+                const selectedMonth = monthSelect.value;
+                const selectedYear = yearSelect.value;
+                daySelect.innerHTML = '';
+
+                const daysInMonth = new Date(selectedYear, selectedMonth, 0).getDate();
+
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const option = document.createElement('option');
+                    option.textContent = day;
+                    option.value = day < 10 ? '0' + day : day; // Ensure two-digit format
+                    daySelect.appendChild(option);
+                }
+                }
+
+                // Populate days when month or year changes
+                monthSelect.addEventListener('change', populateDays);
+                yearSelect.addEventListener('change', populateDays);
+
+                // Initialize days for current month and year
+                populateDays();
+            </script>
+                     <p class="gender">Gender</p>
+                    <div class="female-ctn">
+                        <label class="f" for="m">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                       
+             
+                    </div>
+                    <div class="male-ctn">
+                        <label class="m" for="m">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                       
+                    </div>
+                    <div class="custom-ctn">
+                        <label class="o"  for="o">Custom</label>
+                        <input type="radio" id="custom" name="gender" value="other">
+                       
+                    </div>
+          
+            <p class="pb1">People who use our service may have uploaded your contact information to Facebook. <a href="" class="learn">Learn more.</a> </p>
+            <p class="pb2">By clicking Sign up, you agree to our <a href="" class="terms">Terms, Privacy Policy</a> and <a href="" class="cookies">Cookies Policy.</a> You may receive SMS Notifications from us and can opt out any time.
+             </p>
+
+            <div class="sign-up">
+                <a href="" class="sign-uplink">Sign Up</a>
+            </div>
+            <a href="facebook.html" class="already">Already have an account?</a>
+    </div>
+</form>
+</body>
+</html>
